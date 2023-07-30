@@ -35,7 +35,7 @@ app.use(
       cookie: {
         maxAge: 1000 * 60 * 100,
       },
-      store: MongoStore.create({
+      store: mongoStore.create({
         mongoUrl:
         process.env.MONGO_URI,
         autoRemove: "disabled",

@@ -1,0 +1,23 @@
+<header >
+  <nav class="navbar navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="nav-link" href="/">Update Profile</a>
+      <% if(locals.user) { %>
+      <a class="nav-link" 
+        style="color: wheat;">Hii <%= locals.user.username%>...</a
+      >
+      <%}%>
+
+      <form class="d-flex">
+        <a class="nav-link" href="/dashboard">Home</a>
+        <a class="nav-link" href="/student/add-student">Add Student</a>
+        <a class="nav-link" href="/interview/add-interview"
+          >Add Interview</a
+        >
+        <a class="nav-link" href="/download">Download Report</a>
+        <a class="nav-link" href="/sign-out">sign Out</a>
+      </form>
+    </div>
+  </nav>
+</header>
+

@@ -33,7 +33,7 @@ const studentSchema = new mongoose.Schema(
       type: Number,
       required: true,
     },
-   Status: {
+   placementStatus: {
       type: String,
       enum: ["Placed", "Not placed"],
       required: true,

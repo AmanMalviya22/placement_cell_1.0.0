@@ -55,14 +55,14 @@ module.exports.downloadCSVReport = async function (req, res) {
     }
 
     // Generate the CSV file and save it in the "uploads" folder
-    fs.writeFile("uploads/studentsReport.csv", report, function (err, data) {
+    fs.writeFile("uploads/report.csv", report, function (err, data) {
       if (err) {
         console.log(err);
         return res.redirect("back"); // If there's an error, redirect the user back to the previous page
       }
 
       // If the file is successfully generated, trigger a download of the CSV file to the client
-      return res.download("uploads/studentsReport.csv");
+      return res.download("uploads/report.csv");
     });
   } catch (err) {
     console.log(err); // Log any errors that occur during the process
