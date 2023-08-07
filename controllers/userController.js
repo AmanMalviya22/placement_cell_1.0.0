@@ -47,7 +47,7 @@ module.exports.signUp = (req, res) => {
   if (req.isAuthenticated()) {
     return res.redirect("/profile");
   }
-  return res.render("signup.ejs");
+  return res.render("signUp.ejs");
 };
 
 // creating up a new user
